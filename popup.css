@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e0e0e0;
+  width: 350px;
+  min-height: 500px;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.version {
+  font-size: 11px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Main Control */
+.main-control {
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #4a4a6a 0%, #3a3a5a 100%);
+  color: #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.toggle-btn.active {
+  background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(0, 212, 255, 0.5);
+  }
+}
+
+.btn-icon {
+  font-size: 20px;
+}
+
+/* Presets Section */
+.presets-section {
+  margin-bottom: 20px;
+}
+
+.presets-section h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #aaa;
+}
+
+.presets-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.preset-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px;
+  background: rgba(255,255,255,0.05);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #aaa;
+  font-size: 10px;
+}
+
+.preset-btn:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.preset-btn.active {
+  border-color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+}
+
+.preset-preview {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Custom Colors Section */
+.custom-colors-section {
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.custom-colors-section h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #aaa;
+}
+
+.color-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-item label {
+  flex: 1;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.color-item input[type="color"] {
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.color-value {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: #888;
+  min-width: 70px;
+  text-align: right;
+}
+
+.apply-colors-btn, .reset-colors-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+}
+
+.apply-colors-btn {
+  background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+  color: white;
+}
+
+.apply-colors-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.reset-colors-btn {
+  background: rgba(255,255,255,0.1);
+  color: #888;
+}
+
+.reset-colors-btn:hover {
+  background: rgba(255,255,255,0.15);
+  color: #ccc;
+}
+
+/* Info Section */
+.info-section {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-text {
+  font-size: 11px;
+  color: #666;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}

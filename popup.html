@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vhattoush-Dark v3</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Vhattoush-Dark v3</h1>  <!-- Updated name -->
+      <p class="version">v3.0.0 - Current Tab Only</p>  <!-- Updated version text -->
+    </header>
+
+    <!-- Main Toggle Button -->
+    <section class="main-control">
+      <button class="toggle-btn" id="toggleBtn">
+        <span class="btn-text">Activate Vhattoush-Dark</span>
+        <span class="btn-icon">&#127769;</span>
+      </button>
+    </section>
+
+    <!-- Presets Section -->
+    <section class="presets-section">
+      <h2>Theme Presets</h2>
+      <div class="presets-grid">
+        <button class="preset-btn active" data-preset="default">
+          <div class="preset-preview" style="background: #1a1a2e;"></div>
+          <span>Default</span>
+        </button>
+        <button class="preset-btn" data-preset="midnight">
+          <div class="preset-preview" style="background: #0d1b2a;"></div>
+          <span>Midnight</span>
+        </button>
+        <button class="preset-btn" data-preset="deep">
+          <div class="preset-preview" style="background: #1a1a2e;"></div>
+          <span>Deep</span>
+        </button>
+        <button class="preset-btn" data-preset="neon">
+          <div class="preset-preview" style="background: #16213e;"></div>
+          <span>Neon</span>
+        </button>
+        <button class="preset-btn" data-preset="amoled">
+          <div class="preset-preview" style="background: #000000;"></div>
+          <span>AMOLED</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Custom Colors Section -->
+    <section class="custom-colors-section">
+      <h2>Custom Colors</h2>
+      <div class="color-controls">
+        <div class="color-item">
+          <label>Background</label>
+          <input type="color" id="bgColor" value="#1a1a2e">
+          <span class="color-value" id="bgColorValue">#1a1a2e</span>
+        </div>
+        <div class="color-item">
+          <label>Text Color</label>
+          <input type="color" id="textColor" value="#e0e0e0">
+          <span class="color-value" id="textColorValue">#e0e0e0</span>
+        </div>
+        <div class="color-item">
+          <label>Secondary BG</label>
+          <input type="color" id="secondaryColor" value="#252540">
+          <span class="color-value" id="secondaryColorValue">#252540</span>
+        </div>
+        <div class="color-item">
+          <label>Border Color</label>
+          <input type="color" id="borderColor" value="#404060">
+          <span class="color-value" id="borderColorValue">#404060</span>
+        </div>
+        <div class="color-item">
+          <label>Link Color</label>
+          <input type="color" id="linkColor" value="#64b5f6">
+          <span class="color-value" id="linkColorValue">#64b5f6</span>
+        </div>
+      </div>
+      <button class="apply-colors-btn" id="applyColorsBtn">Apply Custom Colors</button>
+      <button class="reset-colors-btn" id="resetColorsBtn">Reset to Default</button>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <p class="info-text">Works on current tab only • No auto-apply to other tabs</p>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
