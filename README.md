@@ -160,4 +160,4 @@ MIT License - Feel free to modify and distribute.
 
 ## Credits
 
-Created with care for the person who prefers dark mode via KIMI Code <3
+Created with care for developers and users who prefer dark mode.
