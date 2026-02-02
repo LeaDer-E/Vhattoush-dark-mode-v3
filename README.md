@@ -138,7 +138,6 @@ When you change a color:
 ## Supported Websites
 
 This extension works on most websites, including:
-- https://maharatech.gov.eg/
 - Stack Overflow
 - GitHub
 - Wikipedia
